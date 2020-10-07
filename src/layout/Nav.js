@@ -15,7 +15,7 @@ const navs = [{
     } 
 ]
 const Nav = () => (
-    <nav className='bg-purple-600 p-4 text-white'>
+    <nav className='bg-purple-600 p-4 h-16 text-white'>
     <ul className='flex space-x-4 justify-end'>
         {navs.map(navItem => (
             <li>

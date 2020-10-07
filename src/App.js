@@ -1,9 +1,10 @@
 import React from 'react';
 import {Home, About, Contact} from './pages';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import {Nav} from './layout';
+import {Footer, Nav} from './layout';
 function App() {
   return (
+    <div className='flex flex-col h-screen'>
     <Router>
     <Nav />
       <Switch>
@@ -17,7 +18,9 @@ function App() {
         <Contact />
       </Route>
       </Switch>
+      <Footer />
     </Router>
+    </div>
   );
 }
 
