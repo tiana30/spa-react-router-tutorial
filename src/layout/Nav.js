@@ -1,16 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Nav = () => (
-    <nav>
-    <ul>
+    <nav className='bg-purple-600 p-4 text-white'>
+    <ul className='flex space-x-4 justify-end'>
         <li>
-        <a href='#'>Home</a>
+        <Link to="/">Home</Link>
         </li>
         <li>
-        <a href='#'>About</a>
+        <Link to="/about">About</Link>
         </li>
         <li>
-        <a href='#'>Contact</a>
+        <Link to="/contact">Contact</Link>
         </li>
     </ul>
     </nav>
